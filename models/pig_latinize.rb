@@ -1,22 +1,13 @@
-def piglatinize(word)
-  non_pig_latin_words = ["i", "me", "to", "too", "a", "an", "in", "and", "on"]
-  vowels = ["a", "e", "i", "o", "u"]
-
-  if non_pig_latin_words.include?(word)
-    word
-  elsif vowels.include? word[0]
-    word << "ay"
-  else
-    consonants = ""
-    while !vowels.include?(word[0])
-      consonants << word[0]
-      word = word.split("")[1..-1].join
+def karliekodes(first, second)
+    if first == "yes" && second == "yes"
+        "YOU ARE A STRONG WOMAN WHO CAN DO CODE!!"
+        elsif first == "yes" && second == "no"
+        "strong women should ALWAYS do code"
+        elsif first == "no" && second == "yes"
+        "what's the point of a person who can do code if they're not a strong woman ://"
+        elsif first == "no" && second == "no"
+        "just leave kwk"
+    else
+        "excuse me whAt"
     end
-    word + consonants + 'ay'
-  end
-end
-
-
-def to_pig_latin(string)
-  string.split.collect{|word| piglatinize(word)}.join(" ")
 end
