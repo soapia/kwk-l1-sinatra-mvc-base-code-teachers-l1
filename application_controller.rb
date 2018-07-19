@@ -5,21 +5,11 @@ Bundler.require
 
 class MyApp < Sinatra::Base
 
-#   get '/' do
-#     erb :index
-#   end
-
-# end
-
-# class ApplicationController < Sinatra::Base
-  # configure do
-  #   set :public_folder, 'public'
-  #   set :views, 'app/views'
-  # end
-
   get '/' do
     return erb :index
   end
+  
+  # DELETE LINES 14 - 19 // THEY ARE JUST AN EXAMPLE
   
   post '/' do
     @first_response = params[:response1]
