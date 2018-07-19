@@ -9,6 +9,8 @@ class MyApp < Sinatra::Base
     return erb :index
   end
   
+  # DELETE LINES 14 - 19 // THEY ARE JUST AN EXAMPLE
+  
   post '/' do
     @first_response = params[:response1]
     @second_response = params[:response2]
