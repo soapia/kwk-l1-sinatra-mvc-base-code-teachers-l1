@@ -1,13 +1,7 @@
-def karliekodes(first, second)
-    if first == "yes" && second == "yes"
-        "YOU ARE A STRONG WOMAN WHO CAN DO CODE!!"
-        elsif first == "yes" && second == "no"
-        "strong women should ALWAYS do code"
-        elsif first == "no" && second == "yes"
-        "what's the point of a person who can do code if they're not a strong woman ://"
-        elsif first == "no" && second == "no"
-        "just leave kwk"
+def my_method(input1, input2)
+    if input1 != nil && input2 != nil 
+      "this is my output!"
     else
-        "excuse me whAt"
+      "this is output even though you gave me nothing!"
     end
 end
